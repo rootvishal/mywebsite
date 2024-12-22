@@ -1,82 +1,68 @@
-index.html:
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery Mobile Website</title>
-    <!--insert CDN links from jQuery Mobile official website-->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        nav {
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #fff;
+        }
+        main {
+            padding: 2rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
-
 <body>
-    <!----page creation and head section-->
-    <div data-role="page">
-        <div data-page="header" data-theme="b">
-            <center>
-                <h1> Arts</h1>
-            </center>
-        </div>
-        <!--insert the navbar code from Jquery Mobile site , Demo section -->
-        <div data-role="navbar" data-grid="c">
-            <ul>
-                <li><a href="index.html" class="ui-btn-active">Home</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="./login_register.html">Login/Register</a></li>
-            </ul>
-        </div>
-        <center>
-            <h3>Products</h3>
-        </center>
-        <!---content-->
-        <div class="content">
-            <center>
-                <div class="rows">
-                    <div><img src="OIP (1).jpg" height="250px" width="250px">
-                        <img src="d460f070425c3eb192bcd0b97aac2667.jpg" height="250px" width="250px">
-                        <img src="OIP.jpg" height="250px" width="250px">
-                    </div>
-                </div><br><br>
-
-
-                <div class="rows">
-                    <div><img src="d460f070425c3eb192bcd0b97aac2667.jpg" height="250px" width="250px">
-                        <img src="OIP (1).jpg" height="250px" width="250px">
-                        <img src="OIP.jpg" height="250px" width="250px">
-                    </div>
-                </div>
-
-                <div class="rows">
-                    <div><img src="d460f070425c3eb192bcd0b97aac2667.jpg" height="250px" width="250px">
-                        <img src="OIP (1).jpg" height="250px" width="250px">
-                        <img src="OIP.jpg" height="250px" width="250px">
-                    </div>
-                </div>
-            </center>
-        </div>
-        <!---content close-->
-        <!----footer page-->
-        <div data-role="footer" data-theme="b">
-            <center>
-                <div class="quicklinks">
-                    <h3> Quick Links</h3>
-                    <a href="index.html">Home</a><br><br>
-                    <a href="about_us.html">About Us</a><br><br>
-                    <a href="products.html">Products</a><br><br>
-                    <a href="loginregister.html">Login/Register</a>
-                </div>
-                <p>copyright 2022| Thakur Arts,All Rights Reserved</p>
-            </center>
-        </div>
-        <!---footer close-->
-    </div>
-    <!--page close-->
+    <header>
+        <h1>Welcome to My Simple Website</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are passionate about creating simple and elegant designs.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer web design, development, and SEO optimization.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email us at: contact@example.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simple Website. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
